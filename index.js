@@ -1,13 +1,20 @@
-function isPalindrome(strg) {
-  // Write your algorithm here
-  return strg === word.split('').reverse().join('');
+function reverse(word){
+  return word.split('').reverse().join('');
 
 }
-console.log(isPalindrome(abba));
-console.log(isPalindrome(racecar));
-console.log(isPalindrome(a));
-console.log(isPalindrome(robot));
-console.log(isPalindrome(ab));
+function isPalindrome(word) {
+  // Write your algorithm here
+  const reversedWord = reverse(word);
+
+  if (word === reversedWord) {
+    return true;
+  }
+  else{
+    return false;
+  }
+  
+
+}
 
 /* 
   Add your pseudocode here
